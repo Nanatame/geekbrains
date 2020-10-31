@@ -3,6 +3,9 @@ a = 10
 b = 5
 name = "Alex"
 print(f"{a}, {b}, {name}")
+user_name_1 = input("Введите имя 1>>>")
+user_name_2 = input("Введите имя 2>>>")
+print(f"Вы ввели имена:  {user_name_1} и {user_name_2}")
 
 Задание 2:
 seconds_count = int(input("Введите количество секунд >>>"))
