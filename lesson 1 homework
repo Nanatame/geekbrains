@@ -1,0 +1,46 @@
+Задание 1:
+a = 10
+b = 5
+name = "Alex"
+print(f"{a}, {b}, {name}")
+
+Задание 2:
+seconds_count = int(input("Введите количество секунд >>>"))
+minutes_count = (seconds_count % 3600) // 60
+hours_count = seconds_count // 3600
+seconds_count = seconds_count % 60
+print(f"Конвертированное время: {hours_count}:{minutes_count}:{seconds_count}")
+
+Задание 3:
+n = int(input("Введите число >>>"))
+nn = int(str(n) + str(n))
+nnn = int(str(n) + str(nn))
+sum = n + nn + nnn
+print(sum)
+
+Задание 4:
+proceeds = float(input("Введите выручку фирмы >>>"))
+costs = float(input("Введите издержки фирмы >>>"))
+profitability =float(proceeds / costs)
+
+if proceeds > costs:
+    print(f"Фирма работает с прибылью. Рентабельность выручки составила {profitability}%")
+    workers = int(input("Введите количество сотрудников фирмы >>>"))
+    income = float((proceeds - costs) / workers)
+    print(f"Прибыль в расчете на одного человека составила {income} руб")
+elif proceeds == costs:
+    print("Фирма работает в ноль")
+else:
+    print("Фирма работает в убыток")
+
+Задание 5:
+first_result = int(input("Введите результаты пробежки за первый день в километрах >>> "))
+final_result = int(input("Введите результат, которого вы хотите достигнуть за несколько дней >>>"))
+days = 1
+km = first_result
+while km < final_result:
+        next_result = 0.1 * km
+        days += 1
+        km = km + next_result
+        print(f"Результат на {days} день: {km}")
+print(f"Вы достигнете желаемого результата на {days} день при условии, что ваш прогресс всегда увеличивается на 10%")
